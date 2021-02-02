@@ -1,0 +1,15 @@
+*{margin: 0; padding: 0;}
+header .header{
+	background-image: url(../image/49178157_2426312857383390_4225657424469557248_o.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 56px;
+    font-size: 84px;
+    color: #ff0505;
+    text-align: center;
+    text-transform:  uppercase;
+}
+body{
+	background-color: #d9f1f4;
+}

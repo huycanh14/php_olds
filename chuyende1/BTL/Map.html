@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Food around Mỏ</title>
+  <style>
+    #map{
+      height:855px;
+      width:100%;
+    }
+  </style>
+</head>
+<body style="background-color: #DEE1E6;">
+  <div style="width: 100%; height:45px"> </div>
+  <div class="fixed-top">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Menu</h5><br>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <a href=""><p>Thêm địa điểm mới</p></a>
+        <a href=""><p>Sửa địa điểm</p></a>
+        <a href=""><p>Xoá địa điểm</p></a>
+        <a href=""><p>Tìm kiếm địa điểm</p></a>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+  <div id="map"></div>
+  <script>
+  
+    function initMap(){
+    var mapCenter = new google.maps.LatLng(21.0723936, 105.7738397); //Google map Coordinates
+    var google_map;
+    // Map options
+    var options = {
+      zoom:16,
+      center: mapCenter
+    }
+    // New map
+    google_map = new google.maps.Map(document.getElementById('map'), options);
+
+
+    /*
+    // Click vào map
+    google.maps.event.addListener(map, 'click', function(event){
+      // Add marker
+      addMarker({coords:event.latLng});
+    });
+     //Array of markers
+    var markers = [
+    {
+      coords:{lat: 21.0755086, lng: 105.7736016},
+          //iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:'<h1>Nem nướng</h1>'
+        },
+        {
+          coords:{lat:21.0752704, lng: 105.7734919},
+          content:'<h3>Sứa cuốn Ninh Bình</h3><br><h5>36 Lê Văn Hiến</h5><br><h5>lat: 21.0752704 , lng: 105.7734919</h5><br><img src="https://i.pinimg.com/originals/b1/9b/93/b19b93f12acc611dd7338491f659dd3d.jpg" style="width:60px; height:60px">'
+        },
+        {
+          coords:{lat: 21.0713982, lng: 105.773805},
+          content:'<h1>Trường giao thông</h1>'
+        }
+        ];
+
+     //Loop through markers
+     for(var i = 0;i < markers.length;i++){
+        // Add marker
+       addMarker(markers[i]);
+    }
+*/
+    // Add Marker Function
+    /*function addMarker(props){
+      var marker = new google.maps.Marker({
+        position:props.coords,
+        map:map,
+        //icon:props.iconImage
+      });
+
+      // Check for customicon
+      if(props.iconImage){
+        // Set icon image
+        marker.setIcon(props.iconImage);
+      }
+
+      // Check content
+     if(props.content){
+        var infoWindow = new google.maps.InfoWindow({
+          content:props.content
+        });
+
+        marker.addListener('click', function(){
+          infoWindow.open(map, marker);
+        });
+      }
+    }*/
+  }
+</script>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc563n4ko5g3-1Hjw1aC7dh71_vsU43es&callback=initMap&libraries=places&v=weekly"
+defer
+></script>
+
+        <footer style="text-align: center">
+          <!-- <img src="img\download (1).png" class="rounded-circle" alt="Cinque Terre" width="40" height="40">    -->
+          <h3>Bản đồ chuyên đề các quán ăn quanh trường Đại học Mỏ - Địa Chất</h3>
+          <h6>Copyright by Quang Anh©</h6>
+        </footer>
+      </body>
+      </html>
+
+      

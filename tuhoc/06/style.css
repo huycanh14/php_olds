@@ -1,0 +1,21 @@
+.question {
+	padding-left: 60px;
+	padding-top: 20px
+}
+.question span  {
+	font-size: 20px;
+	font-weight: bold;
+}
+.row {
+	padding-left: 90px;
+}
+.xemketqua {
+	padding-bottom: 60px;
+	padding-left: 90px;
+}
+.xemketqua .dropdown {
+	background-color: whitesmoke;
+}
+.xemketqua .dropdown a:hover{
+	color: brown;
+}

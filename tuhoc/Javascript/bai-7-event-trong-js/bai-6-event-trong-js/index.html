@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+       <!-- Dạng 1 event đơn giản trong thẻ html -->
+      <div class="form-group mt-5">
+      	<input class="form-control" type="text" id="message" value="" onkeyup="show_result()"/><br>
+        <div class="mt-1" id="result"></div>
+      </div>
+
+       <!-- Dạng 1 event cho thẻ html bằng js-->
+      <ul class="list-group mt-5">
+          <li class="list-group-item"><a href="#" class="show">Tin công nghệ</a></li>
+          <li class="list-group-item"><a href="#" class="show">Tin trong nước</a></li>
+          <li class="list-group-item"><a href="#" class="show">Tin thời sự</a></li>
+      </ul>  
+
+      <!-- Dạng 3 return true/false -->
+      <form method="post" action="" class="mt-5">
+        <div class="form-group">
+          <label>Tài khoản</label>
+          <input class="form-control" type="text" value="" required="" id="username"/>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input class="form-control" type="text" value="" required="" id="password"/>
+        </div>
+        <div class="form-group">
+          <label>Nhập lại password</label>
+          <input class="form-control" type="text" value="" required="" id="re-password"/>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-info" type="submit" onclick="check_form()">Submit</button> 
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script language="javascript">
+	// Dạng 1 event đơn giản trong thẻ html
+      function show_result()
+      {
+        // Lấy hai thẻ HTML
+        var input = document.getElementById("message");
+        var div = document.getElementById("result");
+         
+        // Gán nội dung ô input vào thẻ div
+        div.innerHTML = input.value;
+      }
+      
+</script>
+
+<script language="javascript">  
+    // Dạng 2 thêm event cho html bằng js
+    // Lấy đối tượng
+    var a_list = document.getElementsByClassName("show");
+     
+    // Lặp và gán sự kiện
+    for (var i = 0; i < a_list.length; i++){
+        a_list[i].onclick = function()
+        {
+            alert('Xin chào, bạn vừa click vào tôi');
+           
+            // return false để khỏi reload trang
+            return false
+        };
+    }
+</script>
+<!-- Dạng 3 return true/false -->
+<script language="javascript">
+  function check_form()
+  {  
+     // Lấy giá trị
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var re_password = document.getElementById("re-password").value;
+     
+      // Kiểm tra các giá trị
+    if (username === ""){
+      alert("Bạn chưa nhập tên đăng nhập");
+      return false;
+    }
+   
+    if (password == ""){
+      alert("Bạn chưa nhập mật khẩu");
+      return false;
+    }
+    if (password != re_password){
+      alert("Mật khẩu nhập lại không đúng");
+      return false;
+    }
+   
+    return true;
+  }
+</script>
+<!-- Thêm sự kiện bằng addEvent -->
+<script language="javascript">
+  var input = document.getElementById("username");
+  input.addEventListener('keyup', function(){
+    if (input.value.length > 15){
+        alert("tên user nhiều hơn 15 ký tự");
+    }
+  });
+
+</script>
+
+
+<!-- Load jquery trước khi load bootstrap js -->
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

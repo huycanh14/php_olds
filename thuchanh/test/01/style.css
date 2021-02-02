@@ -1,0 +1,36 @@
+*{margin: 0px; padding: 0px;}
+
+ul.sub-menu {
+    position: absolute;
+    /* float: right; */
+    left: 350px;
+    /*top: 40px;*/
+    display: none;
+}
+
+ul.sub-menu>li {
+    width: 200px;
+}
+#header{
+	height: 500px;
+}
+#header .menu{
+	width: 300px;
+	float: left;
+	padding-left: 50px;
+	position: relative;
+}
+#header ul>li{
+	list-style: none;
+	cursor: pointer;
+	padding: 10px 0px;
+	background-color: #dddd;
+	border: 1px solid #ffff;
+}
+
+#header ul>li:hover ul.sub-menu {
+    display: block;
+}
+#header ul>li:hover{
+	background-color: #898546;
+}

@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body, html {
+  background-color: #afc4c133; }
+
+#header .Logo {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 5px; }
+  #header .Logo .chuto {
+    font-size: 48px; }
+  #header .Logo .chubinhthuong {
+    font-size: 24px; }
+#header .info {
+  letter-spacing: 10px;
+  padding: 5% 0%;
+  position: relative;
+  color: #7fae9cc7; }
+  #header .info a {
+    color: #7fae9cc7; }
+  #header .info span {
+    cursor: pointer; }
+#header .luachon {
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  top: -20px;
+  right: 23px;
+  z-index: 9; }
+  #header .luachon i {
+    cursor: pointer; }
+  #header .luachon span {
+    padding-left: 25px;
+    cursor: pointer; }
+  #header .luachon a {
+    text-decoration: none;
+    color: #7fae9cc7; }
+
+#content .jumbotron i {
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

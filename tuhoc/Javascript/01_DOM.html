@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Javascript</title>
+</head>
+<body>
+	<!-- 
+		Có 3 phương thức truy xuất trực tiếp được hỗ trợ mọi trình duyệt
+			document.getElementById("id_cần_tìm");
+			document.getElementsByTagName("div");
+			document.getElementsByClassName("tên_class");
+
+			ít dùng : document.getElementByName("name");
+	-->
+
+	<!-- truy xuất node từng thẻ html lấy thuộc tính -->
+
+	<input type="text" id="input_1" value="1" gia_tri="2">
+	<div class="mt-3" id="kq_input_1"><!-- ABC --></div>
+
+
+	<!-- Thay đổi thuộc tính node -->
+	<button class="btn btn-outline-danger" onclick="readOnly()">Set Read only</button>
+
+	<!-- Thêm node vào tron 1 node khác -->
+	<div id="them_vao_day"></div>
+
+	<!-- lấy css và thay đổi CSS -->
+	<div id="div_css" style="margin: 50px; width: 100px; height: 50px; background-color: red;"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var input_1 = document.getElementById("input_1")
+    var value_input_1 = input_1.value //value: lấy giá trị
+    // 
+    console.log(value_input_1)
+    var gia_tri_input_1 = input_1.getAttribute("gia_tri") // gia_tri: là thuộc tính tự tạo. getAttribute là lấy giá trị thuộc tính tự tạo
+    console.log(gia_tri_input_1)
+    // Thêm phần tử, giá trị vào HTML
+    var div_input_1 = document.getElementById("kq_input_1")
+    div_input_1.innerHTML = value_input_1 //lấy giá trị
+
+    /*
+    var html = div_input_1.innerHTML //lấy giá trị ở thẻ div 
+    console.log(html) // => in ra là ABC
+    */
+
+</script>
+
+
+<script type="text/javascript">
+    function readOnly() {
+       var input_1 = document.getElementById("input_1")
+       input_1.setAttribute("readonly", true) //setAttribute(attributeName, value): sửa giá trị của thuộc tính
+    }
+</script>
+
+<script type="text/javascript">
+	var them_vao_day = document.getElementById("them_vao_day")
+	var h1 = document.createElement("h1")
+	h1.innerHTML = "Thẻ h1 thêm vào đây"
+	them_vao_day.appendChild(h1) //appendChild thêm thẻ con, removeChile: xóa
+</script>
+
+<script type="text/javascript">
+	var div_css = document.getElementById("div_css")
+	var css = div_css.style.margin
+	console.log(css)
+	div_css.style.backgroundColor = "blue"
+</script>

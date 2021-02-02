@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 03</title>
+	<style type="text/css">
+		.row {
+		    margin-right: -15px;
+		    margin-left: -15px;
+		}	
+		
+		.left-col {
+			float: left;
+			position: relative;
+		}
+
+		.right-col {
+			float: left;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div class="row">
+		<div class="left-col">
+			Ảnh mô tả:
+		</div>
+		<div class="right-col">
+			<input type="text" name="txtIntroImagePath">
+			<input type="file" name="fIntroImage">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="left-col">
+			Loại tin:
+		</div>
+		<div class="right-col">
+			<select name="ddlNewsType">
+				<option value="1">Giới thiệu</option>
+				<option value="2">Thời sự</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="left-col">
+			Tin tiêu điểm:
+		</div>
+		<div class="right-col">
+			<input type="checkbox" name="cbFocusNews">			
+		</div>
+	</div>		
+</div>
+</body>
+</html>

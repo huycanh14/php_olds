@@ -1,0 +1,10 @@
+- Lấy ra toàn bộ danh sách sinh viên có điểm thi dưới 8.
+- Lấy ra toàn bộ các lớp có sinh viên có điểm thi lớn hơn bằng 9.
+- Thống kê số lượng sinh viên có điểm thi lớn hơn bằng 8.
+- Đưa ra sinh viên có điểm thi lớn nhất của khoa CNTT.
+- Đưa ra họ tên sinh viên, tên lớp, điểm của sinh viên có điểm thấp nhất của Khoa bất kỳ
+- Cho biết điểm cao nhất của mỗi sinh viên, gồm thông tin:Họ tên sinh viên, Điểm 
+- Cho biết tổng số sinh viên ở mỗi khoa, gồmcác thông tin: Tên khoa, Tổng số sinh viên 
+- Cho biết trung bình điểm thi theo từng môn, gồm các thông tin: Mã môn, Tên môn, Trung bình điểm thi 
+- Cho biết môn nào có điểm thi cao nhất, gồmcác thông tin: Tên môn, Số tiết, Tên sinh viên, Điểm 
+- Cho biết khoa nào có nhiều sinh viên nữ nhất, gồm các thông tin: Mã khoa, Tên khoa 

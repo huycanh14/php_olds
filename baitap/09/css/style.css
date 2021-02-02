@@ -1,0 +1,72 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #50A4E9;
+}
+#header .container .content{
+	overflow: hidden;
+	width: 1070px;
+	margin:0px auto;
+}
+#header .container .content .left{
+	width: 20%;
+	float: left;
+
+}
+#header .container .content .left .logo{
+	width: 100px;
+}
+#header .container .content .right{
+	width: 80%;
+	overflow: hidden;
+	float: right;
+}
+#header .container .content .right h1{
+	padding-left: 150px;
+	padding-top: 30px;
+}
+
+/*---------------Menu---------------*/
+/*--css cho main-menu--*/
+.clearfix{
+	clear: both;
+}
+#main-menu{
+	background-color: #003ba8;
+}
+#main-menu .container{
+	width: 1140px;
+	height: 42px;
+	padding-left: 200px;
+}
+#main-menu .container ul>li{ 
+	float: left;
+	position: relative;
+	display: block;
+	border-right:1px dotted #999;
+}
+#main-menu .container ul>li>a{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 12px 15px;
+	display: block;
+}
+#main-menu .container ul>li>a:hover{     /*==nếu đổi thành ul>li:hover>a hiệu ứng sẽ khác==*/
+	background-color: #003ba8;
+	color:#FFFFFF;
+}
+/*==kết thúc css menu==*/
+
+/**/
+table, th, td {
+    border:1px solid black;
+}
